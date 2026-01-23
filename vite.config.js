@@ -5,4 +5,13 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [
     tailwindcss(), react()],
+  server: {
+    host: true,
+    allowedHosts: ['codelyst.onrender.com']
+  },
+
+  preview: {
+    host: true,
+    allowedHosts: ['codelyst.onrender.com']
+  }
 })
