@@ -19,6 +19,11 @@ const VideoPage = () => {
                 .then(res => {
                     // assuming backend returns a video URL
                     console.log("this is the video url");
+                    const status = res.data.data[0].data.status;
+                    console.log("video status:", status);
+                    if (status == "failed") {
+                        alert("Video generation failed. Please try again. Video credits are over but still you can generate and see other visuals of Codelyst for free.");
+                    }
                     console.log(res.data.data[0].data.video_url)
                     setVideoUrl(res.data.data[0].data.video_url);
                 })
