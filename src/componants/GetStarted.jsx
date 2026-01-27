@@ -11,7 +11,7 @@ const GetStarted = () => {
 
     async function requestForVideo(request) {
         console.log(request);
-        return await axios.post(BASE_URL + "/clone", request);
+        return await axios.post(BASE_URL + "/clone", request, { withCredentials: false });
     }
 
     const handleSubmit = async () => {
@@ -50,6 +50,7 @@ const GetStarted = () => {
 
                 // 🔴 NO RESPONSE (SERVER DOWN / CORS)
             } else if (error.request) {
+                console.error("No response from server:", error.request);
                 alert("Server not reachable. Please try again later.");
 
                 // 🔴 OTHER ERROR
