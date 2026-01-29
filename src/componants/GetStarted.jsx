@@ -82,6 +82,49 @@ const GetStarted = () => {
                 </div>
             </section>
 
+            {/* EXAMPLES SECTION */}
+            <section className="max-w-5xl mx-auto px-6 mt-10">
+                <div className="bg-white rounded-xl p-6 shadow-sm border">
+                    <h2 className="text-2xl font-semibold mb-4">
+                        Examples
+                    </h2>
+
+                    <p className="text-gray-600 mb-6">
+                        Look at these previosly analyzed public repositories to get an idea of how the platform works.
+                    </p>
+
+                    <div className="flex flex-col md:flex-row gap-4">
+                        <button
+                            onClick={() =>
+                                navigate(`project/5`)
+                            }
+                            className="border border-blue-700 text-blue-700 hover:bg-blue-50 font-medium px-6 py-3 rounded-lg transition"
+                        >
+                            Example Repo 1
+                        </button>
+
+                        <button
+                            onClick={() =>
+                                navigate(`project/2`)
+                            }
+                            className="border border-blue-700 text-blue-700 hover:bg-blue-50 font-medium px-6 py-3 rounded-lg transition"
+                        >
+                            Example Repo 2
+                        </button>
+
+                        <button
+                            onClick={() =>
+                                navigate(`project/3`)
+                            }
+                            className="border border-blue-700 text-blue-700 hover:bg-blue-50 font-medium px-6 py-3 rounded-lg transition"
+                        >
+                            Example Repo 3
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
             {/* INPUT SECTION */}
             <section className="max-w-5xl mx-auto px-6 mt-12">
                 <div className="p-8">
