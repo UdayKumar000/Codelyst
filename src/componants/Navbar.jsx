@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between p-6" style={{ backgroundColor: "#022b3aff" }}>
       {/* Logo */}
-      <h1 className="text-white font-bold text-2xl">ProjectInsights</h1>
+      <h1 className="text-white font-bold text-2xl">Codelyst</h1>
 
       {/* Centered Links */}
       <ul className="flex gap-6 mx-auto justify-center">
