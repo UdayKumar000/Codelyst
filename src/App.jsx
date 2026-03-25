@@ -7,7 +7,7 @@ import VideoPage from './componants/VideoPage.jsx';
 import ArchitecturePage from './componants/ArchitecturePage.jsx';
 import QuadrantPage from './componants/QuadrantPage.jsx';
 import RadarPage from './componants/RadarPage.jsx';
-import AboutUs from './componants/Aboutus.jsx';
+import AboutUs from './componants/AboutUs.jsx';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './componants/Layout.jsx';
